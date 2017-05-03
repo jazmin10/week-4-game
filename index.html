@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+	<meta charset='UTF-8'>
+	<title>CrystalsCollector Game</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class='row'>
+		<div class='col-md-12'>
+			<header>CrystalsCollector!</header>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-12'>
+			<div id="instructions">
+				<p>You will be given a random number at the start of the game</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your to your total score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-4'>
+			<div id="randomScore"></div>
+		</div>
+		<div class='col-md-4'>
+			<div id='winsScore'></div>
+			<div id='lossesScore'></div>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-2'>
+			<img class='images' id='firstCrystal' src='assets/images/GreenRupee1.png' alt='crystal1' height='400px' width='200px'/>
+		</div>
+		<div class='col-md-2'>
+			<img class='images' id='secondCrystal' src='assets/images/OrangeRupee1.png' alt='crystal2' height='400px' width='200px'/>
+		</div>
+		<div class='col-md-2'>
+			<img class='images' id='thirdCrystal' src='assets/images/SkyRupee1.png' alt='crystal3' height='400px' width='200px'/>
+		</div>
+		<div class='col-md-2'>
+			<img class='images' id='fourthCrystal' src='assets/images/RedRupee1.png' alt='crystal4' height='400px' width='200px'/>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-4'>
+			<div>Your total score is:</div>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-4'>
+			<div id='totalScore'></div>
+		</div>
+	</div>
+
+</body>
+</html>
