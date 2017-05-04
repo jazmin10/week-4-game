@@ -5,66 +5,56 @@
 	<title>CrystalsCollector Game</title>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel='stylesheet' type='text/css' href='assets/css/style.css'/>
 </head>
 <body>
-	<div class='row'>
-		<div class='col-md-12'>
-			<header>CrystalsCollector!</header>
-		</div>
-	</div>
+	<header>
+		<h1>CrystalCollector!</h1>
+	</header>
 
-	<div class='row'>
-		<div class='col-md-12'>
-			<div id="instructions">
-				<p>You will be given a random number at the start of the game</p>
-				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your to your total score.</p>
-				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-				<p>The value of each crystal is hidden from you until you click on it.</p>
-				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	<div>
+		<div id='instructions'>
+			<p>You will be given a random number at the start of the game</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your to your total score.</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</div>
+
+		<div>
+			<div id='randomScore'></div>
+		</div>
+
+		<div>
+			<div id='winsScore'></div>
+			<div id='lossesScore'></div>
+		</div>
+
+		<div>
+			<div>
+				<img class='images' id='firstCrystal' value='value1' src='assets/images/GreenRupee1.png' alt='crystal1' height='400px' width='200px'/>
+			</div>
+			<div>
+				<img class='images' id='secondCrystal' value='value2' src='assets/images/OrangeRupee1.png' alt='crystal2' height='400px' width='200px'/>
+			</div>
+			<div class='col-md-2'>
+				<img class='images' id='thirdCrystal' value='value3' src='assets/images/SkyRupee1.png' alt='crystal3' height='400px' width='200px'/>
+			</div>
+			<div>
+				<img class='images' id='fourthCrystal' value='value4' src='assets/images/RedRupee1.png' alt='crystal4' height='400px' width='200px'/>
 			</div>
 		</div>
-	</div>
 
-	<div class='row'>
-		<div class='col-md-4'>
-			<div id="randomScore"></div>
-		</div>
-		<div class='col-md-4'>
-			<div id='winsScore'>Wins: 0</div>
-			<div id='lossesScore'>Losses: 0</div>
-		</div>
-	</div>
-
-	<div class='row'>
-		<div class='col-md-2'>
-			<img class='images' id='firstCrystal' value='value1' src='assets/images/GreenRupee1.png' alt='crystal1' height='400px' width='200px'/>
-		</div>
-		<div class='col-md-2'>
-			<img class='images' id='secondCrystal' value='value2' src='assets/images/OrangeRupee1.png' alt='crystal2' height='400px' width='200px'/>
-		</div>
-		<div class='col-md-2'>
-			<img class='images' id='thirdCrystal' value='value3' src='assets/images/SkyRupee1.png' alt='crystal3' height='400px' width='200px'/>
-		</div>
-		<div class='col-md-2'>
-			<img class='images' id='fourthCrystal' value='value4' src='assets/images/RedRupee1.png' alt='crystal4' height='400px' width='200px'/>
-		</div>
-	</div>
-
-	<div class='row'>
-		<div class='col-md-4'>
+		<div>
 			<div>Your total score is:</div>
 		</div>
-	</div>
 
-	<div class='row'>
-		<div class='col-md-4'>
-			<div id='totalScore'>0</div>
+		<div>
+			<div id='totalScore'></div>
 		</div>
 	</div>
 
-	<script src='assets/javascript/game.js'></script>
-
+	<script type='text/javascript' src='assets/javascript/game.js'></script>
 </body>
 </html>
