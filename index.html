@@ -5,12 +5,14 @@
 	<title>CrystalsCollector Game</title>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
 	<!-- CSS -->
 	<link rel='stylesheet' type='text/css' href='assets/css/style.css'/>
 </head>
 <body>
 	<header>
-		<h1>CrystalCollector!</h1>
+		<h1>CrystalsCollector!</h1>
 	</header>
 
 	<div>
@@ -22,35 +24,32 @@
 			<p>Each time when the game starts, the game will change the values of each crystal.</p>
 		</div>
 
-		<div>
+		<div id='randomScoreSection'>
 			<div id='randomScore'></div>
 		</div>
 
-		<div>
-			<div id='winsScore'></div>
-			<div id='lossesScore'></div>
-		</div>
-
-		<div>
-			<div>
-				<img class='images' id='firstCrystal' value='value1' src='assets/images/GreenRupee1.png' alt='crystal1' height='400px' width='200px'/>
-			</div>
-			<div>
-				<img class='images' id='secondCrystal' value='value2' src='assets/images/OrangeRupee1.png' alt='crystal2' height='400px' width='200px'/>
-			</div>
-			<div class='col-md-2'>
-				<img class='images' id='thirdCrystal' value='value3' src='assets/images/SkyRupee1.png' alt='crystal3' height='400px' width='200px'/>
-			</div>
-			<div>
-				<img class='images' id='fourthCrystal' value='value4' src='assets/images/RedRupee1.png' alt='crystal4' height='400px' width='200px'/>
+		<div id='scoreSection'>
+			<div id='scoreBoard'>
+				<div id='loss_win'></div>
+				<div id='winsScore'></div>
+				<div id='lossesScore'></div>
 			</div>
 		</div>
 
-		<div>
+		<div id='imagesSection'>
+			<div id='imagesWrapper'>
+				<img class='images' id='firstCrystal' value='value1' src='assets/images/GreenRupee1.png' alt='crystal1'/>
+				<img class='images' id='secondCrystal' value='value2' src='assets/images/OrangeRupee1.png' alt='crystal2'/>
+				<img class='images' id='thirdCrystal' value='value3' src='assets/images/SkyRupee1.png' alt='crystal3'/>
+				<img class='images' id='fourthCrystal' value='value4' src='assets/images/RedRupee1.png' alt='crystal4'/>
+			</div>
+		</div>
+
+		<div class='totalScoreSection'>
 			<div>Your total score is:</div>
 		</div>
 
-		<div>
+		<div class='totalScoreSection'>
 			<div id='totalScore'></div>
 		</div>
 	</div>

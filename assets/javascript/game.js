@@ -49,11 +49,13 @@ function roundComplete(score) {
 	if (userScore == scoreMatch) {
 		console.log('you win');
 		wins++;
+		$('#loss_win').html('You won!');
 		startGame();
 	}
 	else if(userScore > scoreMatch) {
 		console.log('you lose');
 		losses++;
+		$('#loss_win').html('You lost!');
 		startGame();
 	}
 }

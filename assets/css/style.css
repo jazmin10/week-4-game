@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*background-image: url('../images/mirrored_squares/mirrored_squares.png');*/
+	background-image: url('../images/crossed_stripes.png');
+	/*font-family: 'Inknut Antiqua', serif;*/
+	font-family: 'Bungee Shade', cursive;
+}
+
+#randomScoreSection, #scoreSection {
+	float: left;
+}
+
+#imagesSection {
+	clear: both;
+}
+.images {
+	height: 150px;
+	width: 100px;
+	float: left;
+}
+
+.totalScoreSection {
+	clear: both;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	color: #2196F3;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+#instructions {
+	color: #fa7272;
+	border: solid;
+	border-color: #fa7272;
+	margin: 20px;
+	padding: 5px;
+	/*font-family: Arial;*/
+	font-family: 'Inknut Antiqua', serif;
+	/*background-image: url('../images/crossed_stripes.png');*/
+	/*background-image: url('../images/mirrored_squares/mirrored_squares.png');*/
+}
+
+p {
+	margin: 0;
+	text-align: center;
+}
+
+#randomScoreSection {
+	width: 50%;
+}
+
+#scoreSection {
+	width: 50%;
+}
+
+#randomScore {
+	color: #8BC34A;
+	border: solid;
+	height: 150px;
+	margin: 20px;
+	text-align: center;
+	font-size: 50px;
+	padding: 30px;
+    letter-spacing: 10px;
+}
+
+#scoreBoard {
+	color: #8BC34A;
+	border: solid;
+	height: 150px;
+    margin: 20px;
+    font-size: 20px;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.totalScoreSection {
+	color: #FFC107;
+	border: solid;
+	margin: auto;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+#imagesSection {
+	overflow: auto;
+	margin: auto;
+	width: 50%;
+}
+
+#imagesWrapper {
+	overflow: auto;
+	padding-left: 20px;
+}
+
+img {
+	margin: 20px;
+}
+
+#totalScore {
+	font-size: 30px;
+}
+
+#loss_win, #winsScore, #lossesScore {
+	padding: 10px;
+}
+
+@media only screen and (max-width: 1176px) {
+	#imagesSection {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 983px) {
+	#imagesSection {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 846px) {
+	#imagesSection {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 742px) {
+	#imagesSection {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 661px) {
+	#imagesSection {
+		width: 100%;
+	}
+}
