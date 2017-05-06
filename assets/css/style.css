@@ -1,11 +1,13 @@
+/*Homework #4: CrystalsCollector Game*/
+/*I attempted to do this homework without Bootstrap in order*/
+/*to work on my HTML/CSS skills*/
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	/*background-image: url('../images/mirrored_squares/mirrored_squares.png');*/
-	background-image: url('../images/crossed_stripes.png');
-	/*font-family: 'Inknut Antiqua', serif;*/
+	background-image: url('../images/dark_embroidery.png');
 	font-family: 'Bungee Shade', cursive;
 }
 
@@ -16,6 +18,7 @@ body {
 #imagesSection {
 	clear: both;
 }
+
 .images {
 	height: 150px;
 	width: 100px;
@@ -42,10 +45,7 @@ h1 {
 	border-color: #fa7272;
 	margin: 20px;
 	padding: 5px;
-	/*font-family: Arial;*/
 	font-family: 'Inknut Antiqua', serif;
-	/*background-image: url('../images/crossed_stripes.png');*/
-	/*background-image: url('../images/mirrored_squares/mirrored_squares.png');*/
 }
 
 p {
@@ -117,6 +117,7 @@ img {
 	padding: 10px;
 }
 
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 1176px) {
 	#imagesSection {
 		width: 60%;
@@ -141,8 +142,49 @@ img {
 	}
 }
 
-@media only screen and (max-width: 661px) {
+@media only screen and (max-width: 660px) {
 	#imagesSection {
-		width: 100%;
+	overflow: auto;
+	margin: auto;
+	width: 50%;
+	}
+
+	#firstCrystal, #secondCrystal {
+		float: left;
+	}
+
+	#thirdCrystal {
+		clear: both;
+	}
+
+	#thirdCrystal, #fourthCrystal {
+		float: left;
+	}
+
+}
+
+@media only screen and (max-width: 615px) {
+	img {
+		margin: 10px;
+	}
+
+	h1 {
+		font-size: 30px;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	#randomScore {
+		font-size: 30px;
+		padding-top: 45px;
+	}
+	
+	#scoreBoard {
+		font-size: 15px;
+	}
+}
+

@@ -1,10 +1,14 @@
+<!-- HOMEWORK #4: CrystalsCollector Game -->
 <!DOCTYPE html>
 <html lang='en-us'>
 <head>
 	<meta charset='UTF-8'>
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CrystalsCollector Game</title>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
 	<!-- CSS -->
@@ -15,6 +19,7 @@
 		<h1>CrystalsCollector!</h1>
 	</header>
 
+	<!-- Instructions -->
 	<div>
 		<div id='instructions'>
 			<p>You will be given a random number at the start of the game</p>
@@ -24,10 +29,12 @@
 			<p>Each time when the game starts, the game will change the values of each crystal.</p>
 		</div>
 
+		<!-- Holds the number the user has to match -->
 		<div id='randomScoreSection'>
 			<div id='randomScore'></div>
 		</div>
 
+		<!-- Holds the wins and losses score -->
 		<div id='scoreSection'>
 			<div id='scoreBoard'>
 				<div id='loss_win'></div>
@@ -36,6 +43,7 @@
 			</div>
 		</div>
 
+		<!-- Crystal images -->
 		<div id='imagesSection'>
 			<div id='imagesWrapper'>
 				<img class='images' id='firstCrystal' value='value1' src='assets/images/GreenRupee1.png' alt='crystal1'/>
@@ -45,6 +53,7 @@
 			</div>
 		</div>
 
+		<!-- The user's total score -->
 		<div class='totalScoreSection'>
 			<div>Your total score is:</div>
 		</div>
