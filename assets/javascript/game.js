@@ -1,4 +1,4 @@
-// Homework #4: CrystalsCollector Game
+// CrystalsCollector Game
 
 $(document).ready(function() {
 	var scoreMatch;
